@@ -15,7 +15,7 @@ getgenv().AirHubV2Loading = true
 
 --// Cache
 
-local game = game
+local game = roblox
 local loadstring, typeof, select, next, pcall = loadstring, typeof, select, next, pcall
 local tablefind, tablesort = table.find, table.sort
 local mathfloor = math.floor
@@ -320,7 +320,7 @@ AimbotPropertiesSection:Keybind({
 	Name = "Trigger Key",
 	Flag = "Aimbot_TriggerKey",
 	Default = Aimbot_Settings.TriggerKey,
-	Callback = function(Keybind)
+	Callback = function(Keybind) t
 		Aimbot_Settings.TriggerKey = Keybind
 	end
 })
